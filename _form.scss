@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  margin: 0 -15px;
+  /* グリッドを使わないコンテンツとグリッドを使うコンテンツとの位置を調整 */
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+}
+
+.place {
+  display: flex;
+}
+
+input[type=checkbox],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=radio],
+input[type=tel],
+input[type=text],
+select,{
+  border-radius: $base-border-radius;
+  border: $border;
+}
+textarea {
+    border: $border;
+    padding: 10px;
+    background-color: #fff;
+    outline: none;
+    font-size: 1em;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+  .form-wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 15px;
+    border: 1px solid #DEDEDE;
+    border-radius: $base-border-radius;
+  }
+  .fieldset {
+    margin-bottom: 1em;
+  }
+  .fieldset {
+    display: flex;
+    align-items: center;
+  }
+  .nowrap-field {
+    flex-wrap: nowrap;
+  }
+  .submit-button-wrapper {
+    text-align: right;
+  }
+  .place {
+    display: flex;
+  }
+}
